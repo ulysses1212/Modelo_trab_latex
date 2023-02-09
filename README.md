@@ -1,2 +1,2 @@
 # Modelo_trab_latex
- trabalho em latex com capa e estrutura
+ Este é um modelo de trabalho acadêmico em latex com capa e estrutura que eu criei.
