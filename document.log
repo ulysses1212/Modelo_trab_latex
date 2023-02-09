@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2021.12.29)  8 FEB 2023 20:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2021.12.29)  8 FEB 2023 21:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -632,10 +632,10 @@ Package rerunfilecheck Info: File `document.out' has not changed.
 (rerunfilecheck)             Checksum: 6EF7B875E7603B54C127E2D85368EF14;676.
  ) 
 Here is how much of TeX's memory you used:
- 11835 strings out of 478659
- 195516 string characters out of 2845919
+ 11834 strings out of 478659
+ 195226 string characters out of 2845919
  518671 words of memory out of 3000000
- 29764 multiletter control sequences out of 15000+600000
+ 29763 multiletter control sequences out of 15000+600000
  407490 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  67i,15n,77p,792b,486s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -652,7 +652,7 @@ a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/ulyss
 s/ulyss/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 ><C:/Users/ulyss/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
 mti10.pfb>
-Output written on document.pdf (9 pages, 2576544 bytes).
+Output written on document.pdf (9 pages, 2575678 bytes).
 PDF statistics:
  172 PDF objects out of 1000 (max. 8388607)
  34 named destinations out of 1000 (max. 500000)
