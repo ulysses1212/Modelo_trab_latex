@@ -1,0 +1,405 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc} % Este pacote serve para acentuação
+\usepackage[brazil]{babel} % Este pacote coloca os nomes em pt-br
+\usepackage{indentfirst} % Este pacote aplica indentação
+\usepackage[a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry} % Este pacote altera a margem do documento
+\usepackage[usenames, dvipsnames]{xcolor} % Modifica as cores
+\definecolor{minhacor}{RGB}{85,158,131} % Define nova cor
+\usepackage{graphicx} % Este pacote permite adicionar figuras
+\usepackage{float} % Força o posicionamento da figura
+\usepackage{subcaption}   
+\usepackage{indentfirst}
+\usepackage{hyperref}  %%%%
+\hypersetup{colorlinks,citecolor=black,filecolor=black,linkcolor=black,urlcolor=black} %%%%
+\usepackage{fancyhdr}
+
+\begin{document}
+	\title{Template dos relatórios de Métodos da Física Experimental}
+	
+	%%%%% Com o aumento do número de professores que pedem relatórios em formato digital, com imagens coloridas e etc, me vi motivado a montar este template para jogar na núvem e compartilhar a formatação que mais usei/uso nesses meus anos de UERJ.
+	
+	%%%%% Não é de minha responsabilidade se algum professor não aceitar essa formatação, fiz este modelo SEM qualquer compromisso com normas de formatação da universidade, o fiz apenas para facilitar a confecção de relatórios. Alguns professores exigem uma formatação específica, preste atenção.
+	
+	\begin{titlepage}
+		\begin{center}
+				 \begin{figure}[!ht]
+				\centering
+				
+				\begin{minipage}{0.15\textwidth}
+					\centering
+					\includegraphics[width=0.8\textwidth]{Figuras/brasao_esalq2.png} 
+				\end{minipage}\hfill
+				\begin{minipage}{0.7\textwidth}
+					\centering
+					\Large{Escola Superior de Agricultura ``Luiz de Queiroz'' }\\ 
+					\large{Universidade de São Paulo}\\
+					\normalsize{Disciplina - Cód. da disciplina}\\
+				\end{minipage}\hfill
+				\begin{minipage}{0.15\textwidth}
+					\centering
+					\includegraphics[width=0.5\textwidth]{Figuras/brasao_usp1.png}
+				\end{minipage}
+				
+			\end{figure}
+					
+			\vspace{200pt}
+			
+			\LARGE{\textbf{Relatório 01: O primeiro}}\\ %Entre aqui com o número do relatório
+			\Large{Experimento Exemplo}\\ %Entre com o título do experimento
+			
+			\vspace{150pt}
+			
+			\hfill Grupo: XX \\% Número do seu grupo
+			
+			\vspace{40pt} %Substitua os nomes e matrículas fictícios pelos nomes dos participantes do grupo com os seus respectivos números de matrícula.
+			\hfill Ulysses Chaves de Menezes Netto\hspace{20pt} N° USP: xxxxxxxx\\
+		    \hfill Fulano \hspace{20pt} N° USP: xxxxxxxx\\
+		    \hfill Sicrano \hspace{20pt} N° USP: xxxxxxxx\\
+			\hfill Beltrano \hspace{20pt} N° USP: xxxxxxxx\\
+			
+			\vspace{25pt}
+			\hfill \underline{Professor:}\\
+			\hfill Júnio M.R.Cruz\\ %Entre com o nome do professor
+			
+			
+			\vspace{\fill}
+			\large\bf{\today}
+			
+		\end{center}
+	\end{titlepage}
+	
+	
+	%% o índice remissivo pode ser retirado se excluir o texto desde esse comentário até a próxima sequência de %, não se esqueça também de excluir os hyperref lá no alto, estarão marcados com simbolos.
+	\newpage
+	
+	\listoffigures % Lista de figuras
+	\newpage
+	
+	\pagestyle{fancy}
+	\fancyhead[R]{\includegraphics[width=0.08\textwidth]{Figuras/usp_logo.jpg}}
+	\fancyhead[C]{}
+	\fancyhead[L]{\includegraphics[width=0.15\textwidth]{Figuras/esalq.png}}
+	\fancyfoot[L]{}
+	\fancyfoot[C]{\thepage}
+	\fancyfoot[R]{}
+	\renewcommand{\headrulewidth}{0.4pt}
+	\renewcommand{\footrulewidth}{0.4pt}
+	
+	\section{Introdução}
+	
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu mauris posuere, finibus lacus vitae, hendrerit arcu. Proin sit amet arcu eleifend, lobortis turpis in, sagittis purus. Quisque mi ex, pellentesque eget tellus eget, semper semper est. Maecenas nec nunc massa. Nunc accumsan volutpat ante, a congue nunc. Nulla ornare sed augue at sollicitudin.
+	\vspace{1cm}
+	
+	\begin{center}
+		\begin{tabular}{l|c|r}
+		\hline
+		Elemento & Porcentagem & Fator \\
+		\hline\hline
+		Ferro & 10 & 3 \\ \hline
+		Cloro & 33 & 7 \\ \hline
+		Oxigênio & 51 & 1 \\ \hline
+	\end{tabular}
+	\end{center}
+
+\vspace{1cm}
+
+\begin{center}
+	\begin{tabular}{c r @{,}l}
+	Expressão & \multicolumn{2}{c}{Valor} \\ \hline
+	$\pi$ & 3 & 1415 \\
+	$\pi^2$ & 9 & 869 \\
+	$\pi^3$ & 31 & 0062
+\end{tabular}
+\end{center}
+
+\vspace{1cm}
+	
+	\begin{table}[h]
+		\caption{Tabela sem sentido} \label{tab:semsentido}
+		\centering
+		\begin{tabular}{l|l} \hline
+			Parâmetro & Valor \\ \hline\hline
+			XYZ & 123 \\
+			ABC & 321 \\ \hline
+		\end{tabular}
+	\end{table}
+\vspace{1cm}
+
+	A Tabela~\ref{tab:semsentido} apresenta \dots eget condimentum lorem, sit amet dictum justo. Duis in ante et dolor luctus mattis. Sed dapibus, purus vitae ultricies luctus, dui nibh tincidunt augue, at sagittis augue mauris ut lorem. Nunc egestas bibendum laoreet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent vitae pharetra dolor. Duis tincidunt fermentum mollis. Mauris dapibus ornare sollicitudin. Etiam convallis, enim quis scelerisque convallis, eros velit fermentum justo, non ultricies magna nunc ut urna. Nulla facilisi. Duis eget varius mauris. Sed aliquam, lectus eu lobortis semper, massa eros feugiat sem, eu viverra erat turpis non felis. Donec ultrices lorem non convallis malesuada.
+	
+	\begin{figure}[!ht]
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\includegraphics[width=0.9\linewidth]{Figuras/brasao_esalq1.jpg}
+			\caption{Figura 1}
+			\label{fig:figura1subfig}
+		\end{subfigure}
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\includegraphics[width=0.9\linewidth]{Figuras/brasao_esalq1.jpg}
+			\caption{Figura 2}
+			\label{fig:figura2subfig}
+		\end{subfigure}
+		
+		\caption{Exemplo de figuras}
+		\label{fig:figuras}
+		
+	\end{figure}
+	
+	\section{Objetivo}
+	
+	
+	Proin blandit facilisis dui. Curabitur molestie aliquet urna et auctor. Quisque finibus nunc id elementum condimentum. Curabitur non ultricies ante, at cursus felis. Nullam sit amet odio venenatis, ultricies urna dapibus, fermentum ante. Etiam et lorem ornare, dictum mi sed, fringilla nisl. Duis sagittis efficitur felis interdum porta. Mauris efficitur imperdiet quam eget venenatis. Donec euismod fringilla nibh a tristique.
+	 
+	 \begin{figure}[!ht]
+	 	\centering
+	 	
+	 	\begin{minipage}{0.2\textwidth}
+	 		\centering
+	 		\includegraphics[width=0.8\textwidth]{Figuras/brasao_esalq1.jpg} 
+	 	\end{minipage}\hfill
+ 		\begin{minipage}{0.5\textwidth}
+ 			\centering
+ Escola Superior de Agricultura "Luiz de Queiroz"\\ 
+ Universidade de São Paulo\\
+ Geologia Aplicada a Solos - LSO0210\\
+     	\end{minipage}\hfill
+	 	\begin{minipage}{0.2\textwidth}
+	 		\centering
+	 		\includegraphics[width=0.5\textwidth]{Figuras/brasao_usp1.png}
+	 	\end{minipage}
+	 	
+	 \end{figure}
+	
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu mauris posuere, finibus lacus vitae, hendrerit arcu. Proin sit amet arcu eleifend, lobortis turpis in, sagittis purus. Quisque mi ex, pellentesque eget tellus eget, semper semper est. Maecenas nec nunc massa. 
+	
+	\begin{figure}
+		\centering
+		\begin{subfigure}[b]{0.3\textwidth}
+			\includegraphics[width=\textwidth]{Figuras/brasao_esalq1.jpg}
+			\caption{A gull}
+			\label{fig:gull}
+		\end{subfigure}
+		~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+		%(or a blank line to force the subfigure onto a new line)
+		\begin{subfigure}[b]{0.3\textwidth}
+			\includegraphics[width=\textwidth]{Figuras/brasao_esalq1.jpg}
+			\caption{A tiger}
+			\label{fig:tiger}
+		\end{subfigure}
+		~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+		%(or a blank line to force the subfigure onto a new line)
+		\begin{subfigure}[b]{0.3\textwidth}
+			\includegraphics[width=\textwidth]{Figuras/brasao_esalq1.jpg}
+			\caption{A mouse}
+			\label{fig:mouse}
+		\end{subfigure}
+		\caption{Pictures of animals}\label{fig:animals}
+	\end{figure}
+	
+	Nunc accumsan volutpat ante, a congue nunc. Nulla ornare sed augue at sollicitudin. Aliquam lacinia rutrum interdum. Donec et risus turpis. Curabitur posuere est efficitur, congue nisl id, ornare leo. Curabitur sollicitudin, lacus ut rhoncus porttitor, nisl ex feugiat dui, in vulputate leo sapien a massa. Quisque elit nibh, mattis non pulvinar at, fermentum non tellus. Phasellus sed ante neque. Duis commodo a dui sit amet pharetra.
+	
+	
+	\section*{Listas}
+	Meu primeiro documento com listas.
+	
+	Lista não-ordenada:
+	
+	\begin{itemize}
+		\item Primeiro item.
+		\item Segundo item.
+	\end{itemize}
+	
+	Lista ordenada:
+	
+	\begin{enumerate}
+		\item Primeiro item.
+		\item Segundo item.
+		\begin{itemize}
+			\item Subitem 1.
+			\item Subitem 2.
+			\begin{enumerate}
+				\item Subitem 1.
+				\item Subitem 2.
+			\end{enumerate}
+		\end{itemize}
+		
+	\end{enumerate}
+	
+	Listas descritivas:
+	
+	\begin{description}
+		\item[Primeiro] Este é um item.
+		\item[Segundo] Este é um item.
+	\end{description}
+
+
+\begin{center}
+	Cores em LaTeX:
+\end{center}	
+
+\textcolor{red}{Este texto está vermelho} % Muda a cor do texto
+\colorbox{gray}{Este fundo está cinza} % Muda a cor de fundo do texto
+%\pagecolor{minhacor} % Muda a cor da página
+
+\section*{Cores disponíveis por padrão em xcolor}
+
+\textcolor{black}{black}\\
+\textcolor{blue}{blue}\\
+\textcolor{brown}{brown}\\
+\textcolor{cyan}{cyan}\\
+\textcolor{darkgray}{darkgray}\\
+\textcolor{gray}{gray}\\
+\textcolor{green}{green}\\
+\textcolor{lightgray}{lightgray}\\
+\textcolor{lime}{lime}\\
+\textcolor{magenta}{magenta}\\
+\textcolor{olive}{olive}\\
+\textcolor{orange}{orange}\\
+\textcolor{pink}{pink}\\
+\textcolor{purple}{purple}\\
+\textcolor{red}{red}\\
+\textcolor{teal}{teal}\\
+\textcolor{violet}{violet}\\
+\colorbox{black}{\textcolor{white}{white}}\\
+\textcolor{yellow}{yellow}
+
+\section*{Cores disponíveis com xcolor e dvipsnames}
+
+\textcolor{Apricot}{Apricot}\\
+\textcolor{Aquamarine}{Aquamarine}\\
+\textcolor{Bittersweet}{Bittersweet}\\
+\textcolor{Black}{Black}\\
+\textcolor{Blue}{Blue}\\
+\textcolor{BlueGreen}{BlueGreen}\\
+\textcolor{BlueViolet}{BlueViolet}\\
+\textcolor{BrickRed}{BrickRed}\\
+\textcolor{Brown}{Brown}\\
+\textcolor{BurntOrange}{BurntOrange}\\
+\textcolor{CadetBlue}{CadetBlue}\\
+\textcolor{CarnationPink}{CarnationPink}\\
+\textcolor{Cerulean}{Cerulean}\\
+\textcolor{CornflowerBlue}{CornflowerBlue}\\
+\textcolor{Cyan}{Cyan}\\
+\textcolor{Dandelion}{Dandelion}\\
+\textcolor{DarkOrchid}{DarkOrchid}\\
+\textcolor{Emerald}{Emerald}\\
+\textcolor{ForestGreen}{ForestGreen}\\
+\textcolor{Fuchsia}{Fuchsia}\\
+\textcolor{Goldenrod}{Goldenrod}\\
+\textcolor{Gray}{Gray}\\
+\textcolor{Green}{Green}\\
+\textcolor{GreenYellow}{GreenYellow}\\
+\textcolor{JungleGreen}{JungleGreen}\\
+\textcolor{Lavender}{Lavender}\\
+\textcolor{LimeGreen}{LimeGreen}\\
+\textcolor{Magenta}{Magenta}\\
+\textcolor{Mahogany}{Mahogany}\\
+\textcolor{Maroon}{Maroon}\\
+\textcolor{Melon}{Melon}\\
+\textcolor{MidnightBlue}{MidnightBlue}\\
+\textcolor{Mulberry}{Mulberry}\\
+\textcolor{NavyBlue}{NavyBlue}\\
+\textcolor{OliveGreen}{OliveGreen}\\
+\textcolor{Orange}{Orange}\\
+\textcolor{OrangeRed}{OrangeRed}\\
+\textcolor{Orchid}{Orchid}\\
+\textcolor{Peach}{Peach}\\
+\textcolor{Periwinkle}{Periwinkle}\\
+\textcolor{PineGreen}{PineGreen}\\
+\textcolor{Plum}{Plum}\\
+\textcolor{ProcessBlue}{ProcessBlue}\\
+\textcolor{Purple}{Purple}\\
+\textcolor{RawSienna}{RawSienna}\\
+\textcolor{Red}{Red}\\
+\textcolor{RedOrange}{RedOrange}\\
+\textcolor{RedViolet}{RedViolet}\\
+\textcolor{Rhodamine}{Rhodamine}\\
+\textcolor{RoyalBlue}{RoyalBlue}\\
+\textcolor{RoyalPurple}{RoyalPurple}\\
+\textcolor{RubineRed}{RubineRed}\\
+\textcolor{Salmon}{Salmon}\\
+\textcolor{SeaGreen}{SeaGreen}\\
+\textcolor{Sepia}{Sepia}\\
+\textcolor{SkyBlue}{SkyBlue}\\
+\textcolor{SpringGreen}{SpringGreen}\\
+\textcolor{Tan}{Tan}\\
+\textcolor{TealBlue}{TealBlue}\\
+\textcolor{Thistle}{Thistle}\\
+\textcolor{Turquoise}{Turquoise}\\
+\textcolor{Violet}{Violet}\\
+\textcolor{VioletRed}{}VioletRed\\
+\colorbox{black}{\textcolor{White}{White}}\\
+\textcolor{WildStrawberry}{WildStrawberry}\\
+\textcolor{Yellow}{Yellow}\\
+\textcolor{YellowGreen}{YellowGreen}\\
+\textcolor{YellowOrange}{YellowOrange}\\
+	
+\section*{Incluindo figuras}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\linewidth]{Figuras/fig1}
+	\caption[Legenda curta]{Esta é uma legenda longa}
+	\label{fig:fig1}
+\end{figure}
+
+Praesent eget condimentum lorem, sit amet dictum justo. Duis in ante et dolor luctus mattis. Sed dapibus, purus vitae ultricies luctus, dui nibh tincidunt augue, at sagittis augue mauris ut lorem. Nunc egestas bibendum laoreet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent vitae pharetra dolor. Duis tincidunt fermentum mollis. Mauris dapibus ornare sollicitudin. Etiam convallis, enim quis scelerisque convallis, eros velit fermentum justo, non ultricies magna nunc ut urna. Nulla facilisi. Duis eget varius mauris. Sed aliquam, lectus eu lobortis semper, massa eros feugiat sem, eu viverra erat turpis non felis. Donec ultrices lorem non convallis malesuada.
+
+
+\begin{figure}[H]  % O "H" é pra fixar a figura aonde foi colocada
+	\centering
+	\includegraphics[width=0.5\linewidth]{Figuras/fig2}
+	\caption[Legenda curta]{Esta é uma legenda longa}
+	\label{fig:fig2}
+\end{figure}
+
+\section{Materiais e métodos}
+
+Phasellus sed neque tellus. Vestibulum non velit odio. Morbi porttitor turpis et turpis commodo, nec blandit velit maximus. Donec laoreet cursus dui, ac sodales erat faucibus eget. Ut viverra diam non nibh finibus, eget dictum odio tempus. Morbi sollicitudin arcu neque, in vestibulum libero dignissim vel. Sed non dui nibh. In sed lorem ligula. In hac habitasse platea dictumst. Maecenas interdum consequat varius. Nunc faucibus libero vel sem hendrerit, at cursus est euismod. Praesent rutrum sed erat vel viverra. 
+
+
+Tome $x$ e adicione $y$. Você obterá $x+y$.
+Outra equação importante é a do segundo grau
+\[ax^2+bx+c=0\] cuja solução é dada pela
+\emph{Fórmula de Bhaskara}.
+Seja, por exemplo, a equação~(\ref{eqn:exemplo}).
+\begin{equation}
+	2x^2-3x+1=0
+	\label{eqn:exemplo}
+\end{equation}
+Podemos dizer que $x=1$ é uma solução da equação.
+
+\section{Resultado e análise}
+
+Praesent eget condimentum lorem, sit amet dictum justo. Duis in ante et dolor luctus mattis. Sed dapibus, purus vitae ultricies luctus, dui nibh tincidunt augue, at sagittis augue mauris ut lorem. Nunc egestas bibendum laoreet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent vitae pharetra dolor. Duis tincidunt fermentum mollis. Mauris dapibus ornare sollicitudin. Etiam convallis, enim quis scelerisque convallis, eros velit fermentum justo, non ultricies magna nunc ut urna. Nulla facilisi. Duis eget varius mauris. Sed aliquam, lectus eu lobortis semper, massa eros feugiat sem, eu viverra erat turpis non felis. Donec ultrices lorem non convallis malesuada.
+
+
+\section{Conclusão}
+
+Proin blandit facilisis dui. Curabitur molestie aliquet urna et auctor. Quisque finibus nunc id elementum condimentum. Curabitur non ultricies ante, at cursus felis. Nullam sit amet odio venenatis, ultricies urna dapibus, fermentum ante. Etiam et lorem ornare, dictum mi sed, fringilla nisl. Duis sagittis efficitur felis interdum porta. Mauris efficitur imperdiet quam eget venenatis. Donec euismod fringilla nibh a tristique.
+
+Nullam sit amet tempor mi. Mauris id metus ornare, sodales libero eu, ultrices elit. Nullam a ipsum sollicitudin, hendrerit felis ac, gravida odio. Cras condimentum efficitur risus, ut lacinia magna. Curabitur molestie elit a mi varius consectetur. Pellentesque ultricies eros vitae tempor auctor. Cras pellentesque augue dolor, sed sollicitudin ligula congue at. Cras sodales ex sit amet iaculis fermentum. Phasellus iaculis fermentum lectus quis interdum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam sed porta elit.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\linewidth]{Figuras/fig3}
+	\caption[Legenda curta]{Esta é uma legenda longa}
+	\label{fig:fig3}
+\end{figure}
+
+Phasellus sed neque tellus. Vestibulum non velit odio. Morbi porttitor turpis et turpis commodo, nec blandit velit maximus. Donec laoreet cursus dui, ac sodales erat faucibus eget. Ut viverra diam non nibh finibus, eget dictum odio tempus. Morbi sollicitudin arcu neque, in vestibulum libero dignissim vel. Sed non dui nibh. In sed lorem ligula. In hac habitasse platea dictumst. Maecenas interdum consequat varius. Nunc faucibus libero vel sem hendrerit, at cursus est euismod. Praesent rutrum sed erat vel viverra. \cite{Sleep2021}	
+
+
+\newpage
+\addcontentsline{toc}{section}{Referências}
+\bibliographystyle{apalike}
+\bibliography{Minha_biblioteca}
+
+
+
+
+
+	
+\end{document}
